@@ -1,15 +1,26 @@
 # ciFaceTracker 
 
+This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFaceTracker).  There are a couple of tricks to getting it to compile.  
+
+1. The first is that FaceTracker wants to use opencv from /usr/local/ and _not_ Cinder-OpenCV.  I've decided to leave it like this in order to keep the original source of FaceTracker intact.
+
+    The easiest way to install opencv is to use [Homebrew](http://brew.sh) on OSX.  At time of writing (7/28/2016) you can install opencv via the command line like so. 
+    ```
+    brew tap homebrew/science
+    brew intall opencv
+    ```
+
+    In your "Header Search Path" you'll need to put the location of your opencv install.  For me it was `/usr/local/Cellar/opencv/2.4.13/include`
+
+2. FaceTracker also uses angled brackets that will not compile on OSX if you use TinderBox to set it up.  It will place `../blocks/ciFaceTracker/libs/FaceTracker/include` in your "User Header Search Path", and you will have to move it to "Header Search Path" as angled brackets will only work if XCode is treating it like a framework, and not an included library.
+
+
+Below is the original README minus a caveat that was originally included, but fixed in this release.
+
+---
 ciFaceTracker is a port of [Kyle McDonald](https://github.com/kylemcdonald)'s ofxFaceTracker, which is based on Jason Saragih's FaceTracker library.
 
 See [ofxFaceTracer on GitHub](https://github.com/kylemcdonald/ofxFaceTracker)
-
-The model file paths ("face2.tracker", etc) are pulled from the package contents using:
-
-path tBasePath = path( ci::app::AppBasic::getResourcePath() );
-
-So, in Xcode, you can drop the model folder into Resources and you don't have to deal with "Resources.h"
-I haven't tested this on Windows and suspect it won't work - making this a temporary hack. 
 
 TODO:
 - Test Expression and ExpressionClassifier file loading and saving. Should be implemented now, haven't had time to test yet. 
