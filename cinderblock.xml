@@ -5,7 +5,7 @@
   	id="net.facetracker"
   	author="Charlie Whitney, Patrick Hebron"
   	summary="ciFaceTracker is a port of Kyle McDonald's ofxFaceTracker, which is based on Jason Saragih's FaceTracker library."
-	git="https://github.com/Hebali/ciFaceTracker"
+	git="https://github.com/cwhitney/ciFaceTracker"
   	>
 	<supports os="macosx" />
 	<requires>org.libcinder.opencv</requires>
