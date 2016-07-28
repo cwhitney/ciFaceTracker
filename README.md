@@ -1,7 +1,7 @@
 # ciFaceTracker 
 
 ### Compiling
-This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFaceTracker).  There are a couple of tricks to getting it to compile.  
+This is an update for Cinder 0.9.0 of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFaceTracker).  There are a couple of tricks to getting it to compile.  
 
 1. The first is that FaceTracker wants to use opencv from /usr/local/ and _not_ Cinder-OpenCV.  I've decided to leave it like this in order to keep the original source of FaceTracker intact.
 
