@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		0880B649EF69435EAAB2FC02 /* PAW.cc in Sources */ = {isa = PBXBuildFile; fileRef = 837D950B484F4C75BF722B98 /* PAW.cc */; };
+		28599FE21FE943A5A740CDFC /* ciFaceTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DD15850C67D4BC2910D3652 /* ciFaceTracker.cpp */; };
+		2F76B0F6B5214040A0E69D9B /* ExpressionClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4303699D37FE45D7B14A346F /* ExpressionClassifier.cpp */; };
+		4FBD44DEE3244E38A3150BC2 /* BasicSampleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A818FE78D75044DBAB860D0B /* BasicSampleApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		61D46739042E4196ACB18A96 /* FDet.cc in Sources */ = {isa = PBXBuildFile; fileRef = 07F13C6964D741A382AA8D01 /* FDet.cc */; };
+		75C043DDA0E0486EA4EC3EF8 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7763D24AA659420FB61B476D /* CinderApp.icns */; };
+		7D03C8531C6F42F6B3477F44 /* face.tri in Resources */ = {isa = PBXBuildFile; fileRef = 99A5EDB96A324855B5AF90B8 /* face.tri */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		90832BF0C1B64355B8B2A094 /* CLM.cc in Sources */ = {isa = PBXBuildFile; fileRef = 22390128F1D94D7899D141FB /* CLM.cc */; };
+		96BA21AF91FB4C23995EC997 /* Tracker.cc in Sources */ = {isa = PBXBuildFile; fileRef = F074CBE5DF654071B6F003E6 /* Tracker.cc */; };
+		9E66786A8AD74262AFFC0DDF /* IO.cc in Sources */ = {isa = PBXBuildFile; fileRef = FCFBB6C9FEFA451E8640ABB1 /* IO.cc */; };
+		BCEFFECE591942A99C0A3ABE /* PDM.cc in Sources */ = {isa = PBXBuildFile; fileRef = E24D9248280749AAB56A27D0 /* PDM.cc */; };
+		C2E000C0A41C473BA0B13412 /* Patch.cc in Sources */ = {isa = PBXBuildFile; fileRef = AA054768F80F4E33A8A71701 /* Patch.cc */; };
+		CF7AB7C8A7EB4CE4ADEA0A63 /* face.con in Resources */ = {isa = PBXBuildFile; fileRef = 97641014DD144EA898F830FD /* face.con */; };
+		D65C4877E14942E9BE3ABA6E /* face2.tracker in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C23C0081F4F6DBFBB60CB /* face2.tracker */; };
+		D79EBEFEF72E4CDF88DE0042 /* FCheck.cc in Sources */ = {isa = PBXBuildFile; fileRef = E69B7FDAE1C14768A4E6DD2F /* FCheck.cc */; };
+		E0CF9C74310244F891B2DE74 /* face.tracker in Resources */ = {isa = PBXBuildFile; fileRef = C9B5FC5CDFBE49CC8B43DA98 /* face.tracker */; };
+		E56E8D2D5CBB438ABD748C59 /* Expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB5C8926449B7A4D0EFAF /* Expression.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		012489C44B0848FE8759BFD4 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		02AD7000CF4947F599863BC7 /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Expression.h; path = ../blocks/ciFaceTracker/src/Expression.h; sourceTree = "<group>"; };
+		07F13C6964D741A382AA8D01 /* FDet.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = FDet.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/FDet.cc; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1D6C23C0081F4F6DBFBB60CB /* face2.tracker */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = face2.tracker; path = ../blocks/ciFaceTracker/libs/FaceTracker/model/face2.tracker; sourceTree = "<group>"; };
+		22390128F1D94D7899D141FB /* CLM.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = CLM.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/CLM.cc; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3DD15850C67D4BC2910D3652 /* ciFaceTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = ciFaceTracker.cpp; path = ../blocks/ciFaceTracker/src/ciFaceTracker.cpp; sourceTree = "<group>"; };
+		4303699D37FE45D7B14A346F /* ExpressionClassifier.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = ExpressionClassifier.cpp; path = ../blocks/ciFaceTracker/src/ExpressionClassifier.cpp; sourceTree = "<group>"; };
+		4DC1E4DADCA9472DA0BB59A3 /* ciThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ciThread.h; path = ../blocks/ciFaceTracker/src/ciThread.h; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		65AA53B111AB4A9C9BEDABD5 /* CinderOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = ../blocks/OpenCV/include/CinderOpenCV.h; sourceTree = "<group>"; };
+		7763D24AA659420FB61B476D /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		7DCDE266E4894B4AB0699464 /* ciFaceTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ciFaceTracker.h; path = ../blocks/ciFaceTracker/src/ciFaceTracker.h; sourceTree = "<group>"; };
+		837D950B484F4C75BF722B98 /* PAW.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = PAW.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/PAW.cc; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* BasicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97641014DD144EA898F830FD /* face.con */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = face.con; path = ../blocks/ciFaceTracker/libs/FaceTracker/model/face.con; sourceTree = "<group>"; };
+		99A5EDB96A324855B5AF90B8 /* face.tri */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = face.tri; path = ../blocks/ciFaceTracker/libs/FaceTracker/model/face.tri; sourceTree = "<group>"; };
+		A145DFB52D314F7FB6CDD8D4 /* ExpressionClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExpressionClassifier.h; path = ../blocks/ciFaceTracker/src/ExpressionClassifier.h; sourceTree = "<group>"; };
+		A818FE78D75044DBAB860D0B /* BasicSampleApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = BasicSampleApp.cpp; path = ../src/BasicSampleApp.cpp; sourceTree = "<group>"; };
+		AA054768F80F4E33A8A71701 /* Patch.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Patch.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/Patch.cc; sourceTree = "<group>"; };
+		AF8DB5C8926449B7A4D0EFAF /* Expression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Expression.cpp; path = ../blocks/ciFaceTracker/src/Expression.cpp; sourceTree = "<group>"; };
+		B138817F7B484C3B865D57C5 /* ciFaceTrackerThreaded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ciFaceTrackerThreaded.h; path = ../blocks/ciFaceTracker/src/ciFaceTrackerThreaded.h; sourceTree = "<group>"; };
+		B1F453E3BA3D4CF28B10BCFD /* BasicSample_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BasicSample_Prefix.pch; sourceTree = "<group>"; };
+		C9B5FC5CDFBE49CC8B43DA98 /* face.tracker */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = face.tracker; path = ../blocks/ciFaceTracker/libs/FaceTracker/model/face.tracker; sourceTree = "<group>"; };
+		E24D9248280749AAB56A27D0 /* PDM.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = PDM.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/PDM.cc; sourceTree = "<group>"; };
+		E69B7FDAE1C14768A4E6DD2F /* FCheck.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = FCheck.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/FCheck.cc; sourceTree = "<group>"; };
+		F074CBE5DF654071B6F003E6 /* Tracker.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Tracker.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/Tracker.cc; sourceTree = "<group>"; };
+		FCFBB6C9FEFA451E8640ABB1 /* IO.cc */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = IO.cc; path = ../blocks/ciFaceTracker/libs/FaceTracker/src/lib/IO.cc; sourceTree = "<group>"; };
+		FD0D3D667E8B4EF2BF47BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				B89513BA73BC41D28C1A4A6B /* ciFaceTracker */,
+				B770F9B6452F42DFA15B643C /* OpenCV */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A818FE78D75044DBAB860D0B /* BasicSampleApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* BasicSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C9794CC44444AA190134366 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				20D6DA1FD599406E9F600AE0 /* FaceTracker */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		20D6DA1FD599406E9F600AE0 /* FaceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F472D3CA85604F778CB9542F /* src */,
+				F3DC964E6F464929B083B5F0 /* model */,
+			);
+			name = FaceTracker;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* BasicSample */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = BasicSample;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				012489C44B0848FE8759BFD4 /* Resources.h */,
+				B1F453E3BA3D4CF28B10BCFD /* BasicSample_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7763D24AA659420FB61B476D /* CinderApp.icns */,
+				FD0D3D667E8B4EF2BF47BADD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E695B786FCB4429A73337A9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				22390128F1D94D7899D141FB /* CLM.cc */,
+				E69B7FDAE1C14768A4E6DD2F /* FCheck.cc */,
+				07F13C6964D741A382AA8D01 /* FDet.cc */,
+				FCFBB6C9FEFA451E8640ABB1 /* IO.cc */,
+				AA054768F80F4E33A8A71701 /* Patch.cc */,
+				837D950B484F4C75BF722B98 /* PAW.cc */,
+				E24D9248280749AAB56A27D0 /* PDM.cc */,
+				F074CBE5DF654071B6F003E6 /* Tracker.cc */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		8903C6F2923343218AE293E9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				65AA53B111AB4A9C9BEDABD5 /* CinderOpenCV.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		975FB17FE79349C49059E655 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7DCDE266E4894B4AB0699464 /* ciFaceTracker.h */,
+				B138817F7B484C3B865D57C5 /* ciFaceTrackerThreaded.h */,
+				4DC1E4DADCA9472DA0BB59A3 /* ciThread.h */,
+				02AD7000CF4947F599863BC7 /* Expression.h */,
+				A145DFB52D314F7FB6CDD8D4 /* ExpressionClassifier.h */,
+				3DD15850C67D4BC2910D3652 /* ciFaceTracker.cpp */,
+				AF8DB5C8926449B7A4D0EFAF /* Expression.cpp */,
+				4303699D37FE45D7B14A346F /* ExpressionClassifier.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		B770F9B6452F42DFA15B643C /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				8903C6F2923343218AE293E9 /* include */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		B89513BA73BC41D28C1A4A6B /* ciFaceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				975FB17FE79349C49059E655 /* src */,
+				1C9794CC44444AA190134366 /* libs */,
+			);
+			name = ciFaceTracker;
+			sourceTree = "<group>";
+		};
+		F3DC964E6F464929B083B5F0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				97641014DD144EA898F830FD /* face.con */,
+				C9B5FC5CDFBE49CC8B43DA98 /* face.tracker */,
+				99A5EDB96A324855B5AF90B8 /* face.tri */,
+				1D6C23C0081F4F6DBFBB60CB /* face2.tracker */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F472D3CA85604F778CB9542F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4E695B786FCB4429A73337A9 /* lib */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* BasicSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "BasicSample" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicSample;
+			productInstallPath = "$(HOME)/Applications";
+			productName = BasicSample;
+			productReference = 8D1107320486CEB800E47090 /* BasicSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BasicSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* BasicSample */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* BasicSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C043DDA0E0486EA4EC3EF8 /* CinderApp.icns in Resources */,
+				CF7AB7C8A7EB4CE4ADEA0A63 /* face.con in Resources */,
+				E0CF9C74310244F891B2DE74 /* face.tracker in Resources */,
+				7D03C8531C6F42F6B3477F44 /* face.tri in Resources */,
+				D65C4877E14942E9BE3ABA6E /* face2.tracker in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBD44DEE3244E38A3150BC2 /* BasicSampleApp.cpp in Sources */,
+				28599FE21FE943A5A740CDFC /* ciFaceTracker.cpp in Sources */,
+				E56E8D2D5CBB438ABD748C59 /* Expression.cpp in Sources */,
+				2F76B0F6B5214040A0E69D9B /* ExpressionClassifier.cpp in Sources */,
+				90832BF0C1B64355B8B2A094 /* CLM.cc in Sources */,
+				D79EBEFEF72E4CDF88DE0042 /* FCheck.cc in Sources */,
+				61D46739042E4196ACB18A96 /* FDet.cc in Sources */,
+				9E66786A8AD74262AFFC0DDF /* IO.cc in Sources */,
+				C2E000C0A41C473BA0B13412 /* Patch.cc in Sources */,
+				0880B649EF69435EAAB2FC02 /* PAW.cc in Sources */,
+				BCEFFECE591942A99C0A3ABE /* PDM.cc in Sources */,
+				96BA21AF91FB4C23995EC997 /* Tracker.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BasicSample_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					../blocks/OpenCV/lib/macosx/libopencv_calib3d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_contrib.a,
+					../blocks/OpenCV/lib/macosx/libopencv_core.a,
+					../blocks/OpenCV/lib/macosx/libopencv_features2d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_flann.a,
+					../blocks/OpenCV/lib/macosx/libopencv_gpu.a,
+					../blocks/OpenCV/lib/macosx/libopencv_imgproc.a,
+					../blocks/OpenCV/lib/macosx/libopencv_legacy.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ml.a,
+					../blocks/OpenCV/lib/macosx/libopencv_nonfree.a,
+					../blocks/OpenCV/lib/macosx/libopencv_objdetect.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ocl.a,
+					../blocks/OpenCV/lib/macosx/libopencv_photo.a,
+					../blocks/OpenCV/lib/macosx/libopencv_stitching.a,
+					../blocks/OpenCV/lib/macosx/libopencv_superres.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ts.a,
+					../blocks/OpenCV/lib/macosx/libopencv_video.a,
+					../blocks/OpenCV/lib/macosx/libopencv_videostab.a,
+					"\"-lz\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = BasicSample;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BasicSample_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					../blocks/OpenCV/lib/macosx/libopencv_calib3d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_contrib.a,
+					../blocks/OpenCV/lib/macosx/libopencv_core.a,
+					../blocks/OpenCV/lib/macosx/libopencv_features2d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_flann.a,
+					../blocks/OpenCV/lib/macosx/libopencv_gpu.a,
+					../blocks/OpenCV/lib/macosx/libopencv_imgproc.a,
+					../blocks/OpenCV/lib/macosx/libopencv_legacy.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ml.a,
+					../blocks/OpenCV/lib/macosx/libopencv_nonfree.a,
+					../blocks/OpenCV/lib/macosx/libopencv_objdetect.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ocl.a,
+					../blocks/OpenCV/lib/macosx/libopencv_photo.a,
+					../blocks/OpenCV/lib/macosx/libopencv_stitching.a,
+					../blocks/OpenCV/lib/macosx/libopencv_superres.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ts.a,
+					../blocks/OpenCV/lib/macosx/libopencv_video.a,
+					../blocks/OpenCV/lib/macosx/libopencv_videostab.a,
+					"\"-lz\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = BasicSample;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../blocks/ciFaceTracker/libs/FaceTracker/include\"",
+					"\"/usr/local/Cellar/opencv/2.4.13/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/ciFaceTracker/libs/FaceTracker/include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../blocks/ciFaceTracker/libs/FaceTracker/include\"",
+					"\"/usr/local/Cellar/opencv/2.4.13/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "BasicSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BasicSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

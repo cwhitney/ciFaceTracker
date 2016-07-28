@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+  <block 
+  	name="ciFaceTracker" 
+  	id="net.facetracker"
+  	author="Patrick Hebron"
+  	summary="ciFaceTracker is a port of Kyle McDonald's ofxFaceTracker, which is based on Jason Saragih's FaceTracker library."
+	git="https://github.com/Hebali/ciFaceTracker"
+  	>
+	<supports os="macosx" />
+	<requires>org.libcinder.opencv</requires>
+	
+	<headerPattern>src/*.h</headerPattern>
+	<includePath>libs/FaceTracker/include/</includePath>
+	
+	<sourcePattern>src/*.cpp</sourcePattern>
+	<sourcePattern>libs/FaceTracker/src/lib/*.cc</sourcePattern>
+	
+	<resource
+		name="FACE_TRACKER_FACE_CON"
+		type="TEXT"
+		>libs/FaceTracker/model/face.con</resource>
+	<resource
+		name="FACE_TRACKER_FACE_TRACKER"
+		type="TEXT"
+		>libs/FaceTracker/model/face.tracker</resource>
+	<resource
+		name="FACE_TRACKER_FACE_TRI"
+		type="TEXT"
+		>libs/FaceTracker/model/face.tri</resource>
+	<resource
+		name="FACE_TRACKER_FACE2_TRACKER"
+		type="TEXT"
+		>libs/FaceTracker/model/face2.tracker</resource>
+  </block>
+</cinder>
