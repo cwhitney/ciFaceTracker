@@ -1,5 +1,6 @@
 # ciFaceTracker 
 
+### Compiling
 This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFaceTracker).  There are a couple of tricks to getting it to compile.  
 
 1. The first is that FaceTracker wants to use opencv from /usr/local/ and _not_ Cinder-OpenCV.  I've decided to leave it like this in order to keep the original source of FaceTracker intact.
@@ -14,14 +15,10 @@ This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFac
 
 2. FaceTracker also uses angled brackets that will not compile on OSX if you use TinderBox to set it up.  It will place `../blocks/ciFaceTracker/libs/FaceTracker/include` in your "User Header Search Path", and you will have to move it to "Header Search Path" as angled brackets will only work if XCode is treating it like a framework, and not an included library.
 
+
+### Credits
 While FaceTracker is provided free for non-commercial use. For commercial use of FaceTracker, please [request a quote](http://facetracker.net/quote/).
 
-Below is the original README minus a caveat that was originally included, but fixed in this release.
-
----
-ciFaceTracker is a port of [Kyle McDonald](https://github.com/kylemcdonald)'s ofxFaceTracker, which is based on Jason Saragih's FaceTracker library.
-
-See [ofxFaceTracer on GitHub](https://github.com/kylemcdonald/ofxFaceTracker)
-
-TODO:
-- Test Expression and ExpressionClassifier file loading and saving. Should be implemented now, haven't had time to test yet. 
+Original Port - [Hebali](https://github.com/Hebali/ciFaceTracker)
+Original ofxFaceTracker - [Kyle McDonald](https://github.com/kylemcdonald/ofxFaceTracker)
+FaceTracker Lib by (Jason Saragih)[http://jsaragih.org/] and (Kyle McDonald)[http://kylemcdonald.net/] -  [FaceTracker](https://github.com/kylemcdonald/FaceTracker)
