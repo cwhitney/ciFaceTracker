@@ -17,8 +17,10 @@ This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFac
 
 
 ### Credits
-While FaceTracker is provided free for non-commercial use. For commercial use of FaceTracker, please [request a quote](http://facetracker.net/quote/).
+FaceTracker is provided free for non-commercial use. For commercial use of FaceTracker, please [request a quote](http://facetracker.net/quote/).
 
 Original Port - [Hebali](https://github.com/Hebali/ciFaceTracker)
+
 Original ofxFaceTracker - [Kyle McDonald](https://github.com/kylemcdonald/ofxFaceTracker)
+
 FaceTracker Lib by (Jason Saragih)[http://jsaragih.org/] and (Kyle McDonald)[http://kylemcdonald.net/] -  [FaceTracker](https://github.com/kylemcdonald/FaceTracker)
