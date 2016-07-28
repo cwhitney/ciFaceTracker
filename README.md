@@ -23,4 +23,4 @@ Original Port - [Hebali](https://github.com/Hebali/ciFaceTracker)
 
 Original ofxFaceTracker - [Kyle McDonald](https://github.com/kylemcdonald/ofxFaceTracker)
 
-FaceTracker Lib by (Jason Saragih)[http://jsaragih.org/] and (Kyle McDonald)[http://kylemcdonald.net/] -  [FaceTracker](https://github.com/kylemcdonald/FaceTracker)
+FaceTracker Lib by [Jason Saragih](http://jsaragih.org/) and [Kyle McDonald](http://kylemcdonald.net/) -  [FaceTracker](https://github.com/kylemcdonald/FaceTracker)
