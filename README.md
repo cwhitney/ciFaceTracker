@@ -14,6 +14,7 @@ This is an update of ciFaceTracker from [Hebali](https://github.com/Hebali/ciFac
 
 2. FaceTracker also uses angled brackets that will not compile on OSX if you use TinderBox to set it up.  It will place `../blocks/ciFaceTracker/libs/FaceTracker/include` in your "User Header Search Path", and you will have to move it to "Header Search Path" as angled brackets will only work if XCode is treating it like a framework, and not an included library.
 
+While FaceTracker is provided free for non-commercial use. For commercial use of FaceTracker, please [request a quote](http://facetracker.net/quote/).
 
 Below is the original README minus a caveat that was originally included, but fixed in this release.
 
