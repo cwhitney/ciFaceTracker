@@ -11,7 +11,7 @@
 	<requires>org.libcinder.opencv</requires>
 	
 	<headerPattern>src/*.h</headerPattern>
-	<includePath>libs/FaceTracker/include/</includePath>
+	<includePath system="true">libs/FaceTracker/include/</includePath>
 	
 	<sourcePattern>src/*.cpp</sourcePattern>
 	<sourcePattern>libs/FaceTracker/src/lib/*.cc</sourcePattern>
