@@ -11,9 +11,9 @@ This is an update for Cinder 0.9.0 of ciFaceTracker from [Hebali](https://github
     brew intall opencv
     ```
 
-    In your "Header Search Path" you'll need to put the location of your opencv install.  For me it was `/usr/local/Cellar/opencv/2.4.13/include`
+    In your "Header Search Path" you'll need to put the location of your opencv install.  If you installed via Homebrew, it will link it to your `/usr/local/include` folder.  If that doesn't work, try the full path which for me it was `/usr/local/Cellar/opencv/2.4.13/include`
 
-2. FaceTracker also uses angled brackets that will not compile on OSX if you use TinderBox to set it up.  It will place `../blocks/ciFaceTracker/libs/FaceTracker/include` in your "User Header Search Path", and you will have to move it to "Header Search Path" as angled brackets will only work if XCode is treating it like a framework, and not an included library.
+2. If setting up from scratch, note that FaceTracker uses angled brackets , and needs to be included as a system path.  TinderBox should set this up correctly for you.  It should be placed in your "Header Search Path" instead of "User Header Search Path" as angled brackets will only work if XCode is treating it like a framework, and not an included library.
 
 
 ### Credits
