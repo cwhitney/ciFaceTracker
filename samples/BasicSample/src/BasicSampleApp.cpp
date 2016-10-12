@@ -55,7 +55,7 @@ void BasicSampleApp::draw()
         gl::draw(mCamTex);
     }
     
-    mFaceTracker.draw(true);
+    mFaceTracker.draw();
 }
 
 CINDER_APP( BasicSampleApp, RendererGl )
